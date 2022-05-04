@@ -52,3 +52,27 @@ mixedArray[1] = [1, 2, 3, 4, 5, 6];
 console.log(mixedArray[0][2]);
 console.log(mixedArray[0][4]);
 console.log(mixedArray[0][1].length);
+
+console.log("ZADANIE 5.1")
+let car = {
+  type: "sedan",
+  color: "green",
+  engine: "2.0"
+};
+
+console.log(car.type + " " + car.color + " " + car.engine);
+
+car.color = {
+  red: 100,
+  green: 0,
+  blue: 50
+};
+console.log(car);
+
+console.log("ZADANIE 5.2")
+let referenceColor = {
+  red: 50,
+  green: 50
+};
+car.color = referenceColor;
+console.log(car);
