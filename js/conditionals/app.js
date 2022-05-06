@@ -1,23 +1,25 @@
 console.log("Zadanie 1");
-let input = prompt("Ile masz lat?");
-let txt = input >= 18 ? "Jesteś pełnoletni" : "Jesteś niepełnoletni";
-console.log(txt);
+const numbers = [4, 4, 1, 2, 5, 40];
+let avg = 0;
+for (let i = 0; i < numbers.length; i++) {
+  avg += numbers[i];
+}
+avg /= numbers.length;
+console.log(avg);
 
 console.log("Zadanie 2");
-let grade = prompt("Podaj ocene 1-6:");
-console.log(grade)
-switch (grade) {
-  case '1': console.log("niedostateczny");
-          break;
-  case '2': console.log("dopuszczjący");
-          break;
-  case '3': console.log("dostateczny");
-          break;
-  case '4': console.log("dobru");
-          break;
-  case '5': console.log("bardzo dobry");
-          break;
-  case '6': console.log("celujący");
-          break;
-  default: console.log("Nie ocena")
+let array = [];
+
+let min = Math.ceil(1);
+let max = Math.floor(100);
+for (let i = 0; i < 10; i++) {
+  array.push(Math.floor(Math.random() * (max - min + 1)) + min);
+  console.log(array[i]);
+  if (array[i] % 2 === 1) {
+    array[i] = array[i] + 1;
+    console.log("CHANGED: " + array[i]);
+  }
 }
+
+
+
